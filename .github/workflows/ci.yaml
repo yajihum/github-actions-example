@@ -11,6 +11,6 @@ jobs:
         with:
           node-version: 18
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
       - name: Vitest unit test
-        run: npm test
+        run: pnpm test
